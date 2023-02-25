@@ -80,8 +80,10 @@ def mean_std(file_name, start, stop):
 
 
 def main():
-    file_path =r"D:\vf predict\normal_ecg\16265"
-    mean_std(file_path, 0, 375000)
+    l=[16265]
+    for i in l:
+        file_path =r"D:\vf predict\normal_ecg\\"+str(i)
+        mean_std(file_path, 0, 375000)
 
         
     print(rmeans)
@@ -90,6 +92,10 @@ def main():
     print(peak_areas_sum)
     print(peak_areas_std)
 
+    writecsv('rmeans.csv', rmeans)
+    writecsv('rstd.csv', rstandard_deviation)
+    writecsv('peak_areas_sum.csv', peak_areas_sum)
+    writecsv('peak_areas_std.csv', peak_areas_std)
     
     
 
