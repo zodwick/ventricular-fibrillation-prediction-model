@@ -99,6 +99,5 @@ def main():
     
     
 
-maybe i am doing something wrong in the code but i am getting the same output for all the files
 main()
 
