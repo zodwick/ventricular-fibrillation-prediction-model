@@ -97,7 +97,7 @@ def main():
     writecsv('peak_areas_sum.csv', peak_areas_sum)
     writecsv('peak_areas_std.csv', peak_areas_std)
     
-    aaaaa
+    
 
 
     
